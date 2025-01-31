@@ -77,6 +77,11 @@ export default function Profile() {
     fetchUserData()
   }, [router])
 
+  const handleLogout = () => {
+    localStorage.removeItem('jwt');
+    router.push('/login');
+  };
+
   if (!userData) {
     return <div>Loading...</div>
   }
@@ -126,8 +131,9 @@ export default function Profile() {
               </div>
             </div>
           </div>
-        
-      </main>
+          <button className="logout-button" onClick={handleLogout}>Logout</button>
+          
+                </main>
     </div>
   )
 }

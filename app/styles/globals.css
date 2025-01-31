@@ -302,3 +302,24 @@ strong {
     font-size: 1rem;
   }
 }
+.logout-button{
+  background-color: #9c7aaa;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  width: 100%;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.logout-button:hover {
+  background-color: #663399;
+  transform: translateY(-4px); 
+}
+
+.logout-button:active {
+  transform: translateY(2px); 
+}
